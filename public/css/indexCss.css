@@ -1,0 +1,25 @@
+
+        .web {
+            margin: auto;
+            width: 80%;
+            height: 50%;
+            border: 3px solid green;
+            padding: 10px;
+        }
+        body{
+            text-align: center;
+        }
+        ul {
+            
+            width: 100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        ul li a{
+            font-size: 30px;
+            color: black;
+        }
+        h1 {
+            font-size: 40px;
+        }
+        
