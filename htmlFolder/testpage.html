@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Testpage</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #locate {
+            width: 500px;
+            border: none;
+        }
+        #locate h3 {
+            font-size: 50px;
+            margin: 0;
+            display: inline-block;
+        }
+        #locate #night_day{
+            height:66px; 
+            width:100px;
+            font-size: 30px;
+            float: left;
+        }
+        ul {
+            
+            width: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>This is testpage</h1>
+    <div id='locate'>
+        <h3><a href="/">web</a></h3>
+        <input id="night_day" type="button"  name ="selects" value="night" onclick="
+            // if(document.querySelector('#night_day').value=='night'){
+            var target = document.querySelector('body');
+            if(this.value=='night'){
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            document.querySelector('#night_day').value='day';
+        }
+        else{
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            document.querySelector('#night_day').value='night'; 
+        }" > <br>
+    </div>
+    
+    <ul>
+            <li><a href="/page/HTML">HTML</a> </li>
+            <li><a href="/page/CSS">CSS</a> </li>
+            <li><a href="/page/Javascript">Javascript</a> </li>
+            <li><a href="/testpage">testpage</a></li>
+    </ul>
+    
+        
+    
+    
+    
+    <script>
+        var i = 'title'
+        document.write(1+1,`<br>${i} is javacript`)
+        document.write(1==2,'<br><br>');
+
+        
+
+
+        document.write(10+'<br>')
+        if (3){
+        document.write(20+'<br>')
+        } else{            
+            document.write(30+'<br>')
+        }
+        document.write(40+'<br>')
+        var a = new Array();
+        a[0] = "jhyyk";
+        a[1] = "sjw";
+        a.push('hello')
+        document.write("array [a]'s value is : ")
+        var sum =''
+        for (var i = 0; i<a.length; i++) {
+            sum = sum + `${a[i]}, `
+        }
+        document.write(`${sum}<br>`);
+
+        document.write(`array [a]'s length is ${a.length}`);
+        
+    </script>
+    <p><input type="button" value="alert"  onclick="alert('alert!')" style="height:50px; width:50px"></p><br><br><br>
+    <p><input type="text" placeholder="onmousedown" onmousedown="alert('onmousedown')"></p>
+    <p><input type="text" placeholder="onkeydown" onkeydown="alert('onkeydown')"></p>
+
+</body>
+</html>

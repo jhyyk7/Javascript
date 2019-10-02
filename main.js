@@ -12,4 +12,8 @@ app.get('/page/:pageid', function(request, response){
     
     response.sendfile(path.join(`./htmlFolder/${request.params.pageid}.html`))
 })
+app.get ('/testpage', function (request, response){
+    response.sendfile(path.join('./htmlFolder/testpage.html'))
+})
+
 app.listen(3000);
