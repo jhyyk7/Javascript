@@ -5,20 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML</title>
     <link rel="stylesheet" href="/css/indexCss.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/colors.js"></script>
 </head>
 <body>
-    <h1><a href="/">HTML</a></h1><br>
+    <h1><a href="/page/HTML">HTML</a></h1><br>
     <h3><a href="/">web</a></h3>
-    <input type="button" value="night" style="height:50px; width:100px; font-size: 25px" onclick="
-    document.querySelector('body').style.backgroundColor='black';
-    document.querySelector('body').style.color='white';
-    
-    ">
-    <input type="button" value="day" style="height:50px; width:100px; font-size: 25px" onclick="
-    document.querySelector('body').style.backgroundColor='white';
-    document.querySelector('body').style.color='black';
-    
-    ">
+    <input id="night_day" type="button"  name ="selects" value="night" onclick="                         
+                night_dayHandler(this);                      
+        " > <br>
     <ul>
         <li><a href="/page/HTML">HTML</a> </li>
         <li><a href="/page/CSS">CSS</a> </li>
